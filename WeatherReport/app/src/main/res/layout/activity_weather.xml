@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".view.WeatherActivity">
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="@dimen/largetxt"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maduraihh"
+        android:textColor="@color/white"
+        android:textSize="@dimen/largesmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdate" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3CF1EBF1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/sunrise"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunrise"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtsunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:40 AM"
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3CF1EBF1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/sunset"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunset"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtsunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:40 AM"
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3CF1EBF1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/wind"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtwind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:40 AM"
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3CF1EBF1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/gauge"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtpressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:40 AM"
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3CF1EBF1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:srcCompat="@drawable/humidity"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txthumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:40 AM"
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#3CF1EBF1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/done"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created By"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/createby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raji"
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtcity">
+
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txttemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+
+            android:text="29°C"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txttemp_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Min Temp: 05:05 AM"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txttemp_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:text="Max Temp: 05:05 PM"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Two"
+
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtupdateby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated by"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcity" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/txtcity"
+        tools:layout_editor_absoluteX="32dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <item android:drawable="@drawable/unchecked"
+        android:state_checked="false"/>
+    <item android:drawable="@drawable/cbchecked"
+        android:state_checked="true"/>
+    <item android:drawable="@drawable/unchecked"/>-->
+    <item android:state_enabled="true" android:state_checked="true"
+        android:drawable="@drawable/cbchecked" />
+    <item android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/unchecked" />
+    <item android:state_enabled="false" android:state_checkable="true" android:drawable="@drawable/transp" />
+
+</selector>
